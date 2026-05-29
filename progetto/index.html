@@ -1,23 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="movieStyle.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <title> Craflix - Home</title>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo-container">
-            <img src="src/logoMovie.png" id="logo" alt="logo Movies" width="80" height="90">
-        </div>
-        <ul class="nav-links">
-            <li><a href="Movies">Movies</a></li>
-            <li><a href="Serie">Serie</a></li>
-            <li><a href="Profilo">Profilo</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="src/logoMovie.png" id="logo" alt="Logo " width="80" height="90">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="series.html">Serie</a></li>
+                <li><a href="profile.html">Profilo</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <!-- Sezione 1: Film del momento -->
+        <section class="movies-section">
+            <h2>Film del momento</h2>
+            <div id="trending-movies-container" class="cards-grid">
+            </div>
+        </section>
+
+        <!-- Sezione 2: Serie TV del momento -->
+        <section class="series-section">
+            <h2>Serie TV del momento</h2>
+            <div id="trending-series-container" class="cards-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Movie App - Progetto Esame Frontend Basangeac </p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    
 </body>
 </html>
