@@ -324,3 +324,139 @@ footer {
         text-align: center;
     }
 }
+
+/* Layout della pagina dettaglio */
+.detail-wrapper {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.detail-card {
+    display: flex;
+    gap: 3rem;
+    background-color: #1c1c1c;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+}
+
+.detail-poster-zone {
+    flex: 1;
+    max-width: 350px;
+}
+
+.detail-img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.detail-info-zone {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail-info-zone h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.detail-year {
+    color: #888888;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.detail-meta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.type-badge {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.rating-badge {
+    color: #ffbd00;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.genres-list {
+    color: #cccccc;
+    font-size: 0.95rem;
+}
+
+.detail-info-zone h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.detail-overview {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+.action-zone {
+    margin-top: auto;
+}
+
+.back-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #888888;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+
+/* Rendo la pagina responsiva per tablet e smartphone */
+@media (max-width: 768px) {
+    .detail-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+    
+    .detail-poster-zone {
+        max-width: 280px;
+    }
+    
+    .detail-info-zone h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .detail-meta-tags {
+        justify-content: center;
+        gap: 1rem;
+    }
+}
