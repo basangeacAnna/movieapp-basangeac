@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>CrafliX - Serie TV</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="brand-container">
+                <a href="index.html" class="logo-link">
+                    <img src="src/logoMovie.png" id="logo" alt="Logo Movies" width="50" height="55">
+                    <span class="brand-name">CrafliX</span>
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="series.html" class="active">Serie</a></li>
+                <li><a href="profile.html">Profilo</a></li>
+            </ul>
+
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Cerca serie TV...">
+                </div>
+                <a href="profile.html" class="avatar-link">
+                <img src="src/profiloPhoto.jpg" alt="Profilo" class="user-avatar">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="series-section">
+            <h2>Tutte le Serie TV Popolari</h2>
+            <div id="series-page-container" class="cards-grid">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Movie App - Progetto Esame Frontend Basangeac</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/series.js"></script>
+</body>
+</html>

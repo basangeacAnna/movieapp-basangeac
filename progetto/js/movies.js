@@ -10,7 +10,7 @@ function createMovieCard(movie) {
     // Gestisco il solito placeholder se per caso manca la locandina originale
     const poster = movie.poster_path 
         ? `${IMG_URL}${movie.poster_path}` 
-        : 'https://via.placeholder.com/500x750?text=Nessuna+Immagine';
+        : 'src/no-poster.png';
 
     // Creo l'elemento HTML da buttare nella griglia
     const card = document.createElement('div');

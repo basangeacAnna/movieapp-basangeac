@@ -227,3 +227,100 @@ footer {
     text-align: center;
     padding: 2rem;
 }
+
+.profile-section {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.profile-card {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-main-avatar {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e50914;
+}
+
+.profile-meta h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+}
+
+.profile-role {
+    color: #888888;
+    font-size: 1rem;
+}
+
+.profile-details h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #e50914;
+    padding-left: 0.7rem;
+}
+
+.project-description {
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 1.5rem;
+    border-radius: 6px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.project-description strong {
+    color: #ffffff;
+}
+
+.project-description code {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #e50914;
+}
+
+.github-container {
+    margin-top: 1rem;
+}
+
+.github-button {
+    display: inline-block;
+    background-color: #e50914;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.github-button:hover {
+    background-color: #b80710;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}

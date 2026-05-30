@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>CrafliX - Il Tuo Profilo</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="brand-container">
+                <a href="index.html" class="logo-link">
+                    <img src="src/logoMovie.png" id="logo" alt="Logo Movies" width="50" height="55">
+                    <span class="brand-name">CrafliX</span>
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="series.html">Serie</a></li>
+                <li><a href="profile.html" class="active">Profilo</a></li>
+            </ul>
+
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Cerca...">
+                </div>
+                <a href="profile.html" class="avatar-link">
+                    <img src="src/profiloPhoto.jpg" alt="Profilo" class="user-avatar">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <section class="profile-section">
+        <div class="profile-card">
+            
+            <div class="profile-header">
+                <img src="src/profiloPhoto.jpg" alt="Profilo Utente" class="profile-main-avatar">
+                <div class="profile-meta">
+                    <h2>Anna Maria Basangeac</h2>
+                    <p class="profile-role">Studente & Web Developer</p>
+                </div>
+            </div>
+
+            <div class="profile-details">
+                <h3>Descrizione del Progetto</h3>
+                <div class="project-description">
+                    <p>
+                        <strong>CrafliX</strong> è una web app multi-pagina sviluppata in JavaScript Vanilla, HTML5 e CSS3. 
+                        Il progetto implementa un'interfaccia responsive in stile piattaforma di streaming, integrando 
+                        chiamate asincrone (tramite <code>fetch</code> e <code>async/await</code>) verso l'API pubblica di 
+                        <strong>The Movie Database (TMDB)</strong> per la gestione e la visualizzazione in tempo reale di film e serie TV.
+                    </p>
+                </div>
+
+                <h3>Link Utili</h3>
+                <div class="github-container">
+                    <a href="https://github.com/basangeacAnna/movieapp-basangeac" target="_blank" class="github-button">
+                        Visualizza la Repository su GitHub
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2026 Movie App - Progetto Esame Frontend Basangeac</p>
+    </footer>
+
+</body>
+</html>
