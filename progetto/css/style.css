@@ -79,7 +79,8 @@ header {
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover, 
+.nav-links a.active {
     color: var(--text-color);
 }
 
@@ -116,11 +117,11 @@ header {
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-
 .avatar-link:hover .user-avatar {
     transform: scale(1.05);
     border-color: #ffffff;
 }
+
 main {
     flex: 1; 
     max-width: 1200px;
@@ -146,28 +147,20 @@ section h2 {
     gap: 1.5rem;
 }
 
-footer {
-    background-color: #000000;
-    text-align: center;
-    padding: 1.5rem;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    border-top: 1px solid #222;
-}
-
 .movie-card {
     background-color: transparent; 
     border-radius: 6px;
     overflow: hidden;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+    text-decoration: none;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     position: relative;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
 }
 
 .movie-card:hover {
     transform: scale(1.08); 
-    cursor: pointer;
     z-index: 10; 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), 0 4px 12px rgba(229, 9, 20, 0.2); 
 }
@@ -212,120 +205,6 @@ footer {
     width: fit-content; 
 }
 
-.loading-text {
-    color: var(--text-muted);
-    font-style: italic;
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 2rem;
-}
-
-.error-text {
-    color: var(--accent-color);
-    font-weight: bold;
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 2rem;
-}
-
-.profile-section {
-    max-width: 700px;
-    margin: 3rem auto;
-    padding: 0 2rem;
-}
-
-.profile-card {
-    background-color: #1c1c1c;
-    border-radius: 8px;
-    padding: 2.5rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.profile-header {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-}
-
-.profile-main-avatar {
-    width: 100px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #e50914;
-}
-
-.profile-meta h2 {
-    font-size: 1.8rem;
-    color: #ffffff;
-    margin-bottom: 0.2rem;
-}
-
-.profile-role {
-    color: #888888;
-    font-size: 1rem;
-}
-
-.profile-details h3 {
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-left: 4px solid #e50914;
-    padding-left: 0.7rem;
-}
-
-.project-description {
-    background-color: rgba(255, 255, 255, 0.02);
-    padding: 1.5rem;
-    border-radius: 6px;
-    line-height: 1.6;
-    color: #cccccc;
-}
-
-.project-description strong {
-    color: #ffffff;
-}
-
-.project-description code {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: monospace;
-    color: #e50914;
-}
-
-.github-container {
-    margin-top: 1rem;
-}
-
-.github-button {
-    display: inline-block;
-    background-color: #e50914;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.github-button:hover {
-    background-color: #b80710;
-    transform: translateY(-2px);
-}
-
-@media (max-width: 600px) {
-    .profile-header {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-/* Layout della pagina dettaglio */
 .detail-wrapper {
     max-width: 1000px;
     margin: 3rem auto;
@@ -437,7 +316,122 @@ footer {
     border-color: #ffffff;
 }
 
-/* Rendo la pagina responsiva per tablet e smartphone */
+.loading-text {
+    color: var(--text-muted);
+    font-style: italic;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+}
+
+.error-text {
+    color: var(--accent-color);
+    font-weight: bold;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+}
+
+.profile-section {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.profile-card {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-main-avatar {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e50914;
+}
+
+.profile-meta h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+}
+
+.profile-role {
+    color: #888888;
+    font-size: 1rem;
+}
+
+.profile-details h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #e50914;
+    padding-left: 0.7rem;
+}
+
+.project-description {
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 1.5rem;
+    border-radius: 6px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.project-description strong {
+    color: #ffffff;
+}
+
+.project-description code {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #e50914;
+}
+
+.github-container {
+    margin-top: 1rem;
+}
+
+.github-button {
+    display: inline-block;
+    background-color: #e50914;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.github-button:hover {
+    background-color: #b80710;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+    margin-top: auto;
+}
+
 @media (max-width: 768px) {
     .detail-card {
         flex-direction: column;
@@ -458,5 +452,12 @@ footer {
     .detail-meta-tags {
         justify-content: center;
         gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
     }
 }
