@@ -211,3 +211,19 @@ footer {
     border-radius: 4px;
     width: fit-content; 
 }
+
+.loading-text {
+    color: var(--text-muted);
+    font-style: italic;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+}
+
+.error-text {
+    color: var(--accent-color);
+    font-weight: bold;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+}
