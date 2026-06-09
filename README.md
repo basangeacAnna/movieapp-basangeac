@@ -1,4 +1,3 @@
-```markdown
 # Craflix — Movie App (Stile Netflix)
 
 **Corso:** Introduzione allo sviluppo frontend  
