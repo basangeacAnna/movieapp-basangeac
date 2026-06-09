@@ -105,5 +105,3 @@ Dopodiché, apri il browser e naviga sull'indirizzo locale mostrato nel terminal
 * **CSS3 Moderno:** Gestione del layout di allineamento tramite Flexbox ed elaborazione delle griglie responsive flessibili con CSS Grid. Stati di `:hover` fluidi e transizioni animate sulle card.
 * **JavaScript Asincrono:** Utilizzo profondo di `fetch()`, programmazione asincrona gestita con costrutti `async/await` e manipolazione dinamica del DOM tramite metodi degli array (`.map()`, `forEach`).
 * **Robustezza:** Gestione minima degli errori di rete e supporto integrato per la visualizzazione dello stato di caricamento.
-
-```
