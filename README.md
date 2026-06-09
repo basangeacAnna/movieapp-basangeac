@@ -1,4 +1,4 @@
-```
+```markdown
 # Craflix — Movie App (Stile Netflix)
 
 **Corso:** Introduzione allo sviluppo frontend  
@@ -33,8 +33,9 @@ progetto/
     ├── movies.js       # Logica di popolamento della sezione Film
     └── series.js       # Logica di popolamento della sezione Serie TV
 
----
+```
 
+---
 
 ## 3. Endpoint TMDB Utilizzati
 
@@ -60,6 +61,9 @@ In linea con i requisiti di igiene della repository e per evitare il caricamento
 1. La chiave privata viene ospitata centralmente all'interno del file `js/utili.js` sotto forma di costante stringa:
 ```javascript
 const API_KEY = 'LA_TUA_API_KEY';
+
+```
+
 
 2. Il file contenente la chiave locale è configurato all'interno del file `.gitignore` per essere escluso dal tracciamento dei commit.
 3. Per avviare il progetto in locale, è necessario creare il file `js/utili.js` e valorizzare la costante `API_KEY` con il proprio token personale generato sulla dashboard sviluppatore di TMDB.
@@ -90,6 +94,7 @@ npx serve .
 # Oppure utilizzando python se presente sul sistema
 python -m http.server 8080
 
+```
 
 Dopodiché, apri il browser e naviga sull'indirizzo locale mostrato nel terminale (es. `http://localhost:3000` o `http://localhost:8080`).
 
