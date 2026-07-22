@@ -29,7 +29,7 @@ async function initSeriesPage() {
     const popularSeries = await getData('/tv/popular');
     seriesPageContainer.innerHTML = '';
 
-    if (popularSeries.length === 0) {
+    if (!popularSeries || popularSeries.length === 0) {
         seriesPageContainer.innerHTML = '<p class="error-text">Impossibile caricare le serie TV.</p>';
     } else {
         popularSeries.map(series => {

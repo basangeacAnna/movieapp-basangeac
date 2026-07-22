@@ -29,7 +29,7 @@ async function initMoviesPage() {
     const popularMovies = await getData('/movie/popular');
     moviesPageContainer.innerHTML = '';
 
-    if (popularMovies.length === 0) {
+    if (!popularMovies || popularMovies.length === 0) {
         moviesPageContainer.innerHTML = '<p class="error-text">Impossibile caricare i film popolari.</p>';
     } else {
         popularMovies.map(movie => {

@@ -38,7 +38,7 @@ async function initHome() {
     moviesContainer.innerHTML = '';
     seriesContainer.innerHTML = '';
 
-    if (trendingMovies.length === 0) {
+    if (!trendingMovies || trendingMovies.length === 0) {
         moviesContainer.innerHTML = '<p class="error-text">Si è verificato un errore nel caricamento dei film.</p>';
     } else {
         trendingMovies.map(movie => {
@@ -47,7 +47,7 @@ async function initHome() {
         });
     }
 
-    if (trendingSeries.length === 0) {
+    if (!trendingSeries || trendingSeries.length === 0) {
         seriesContainer.innerHTML = '<p class="error-text">Si è verificato un errore nel caricamento delle serie TV.</p>';
     } else {
         trendingSeries.map(series => {
